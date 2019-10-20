@@ -1,0 +1,4 @@
+https://www.techiediaries.com/php-laravel-crud-mysql-tutorial/ following 
+
+Many extension was not there 
+such as mbstring, pdo 

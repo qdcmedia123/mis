@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+{% block title %} Movies {% endblock %}
+
+{% block body %}
+    {% if articles %}
+        <table id="movies" class="table table-striped">
+            <thead>
+            <tr class="lead">
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for article in articles %}
+                <tr>
+                    <td>{{ article.name }}</td>
+                    <td>
+                        <a href="/movie/{{ article.id }}" class="btn btn-primary">Show</a>
+                        <a href="/movie/edit/{{ article.id }}" class="btn btn-secondary" data-id="{{ article.id }}">Edit</a>
+                        <a href="#" class="btn btn-danger delete-article" data-id="{{ article.id }}" onClick = "deleteById(this);">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    {% else %}
+        <p>No articles to display</p>
+    {% endif %}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="/js/main.js"></script>
+{% endblock %}

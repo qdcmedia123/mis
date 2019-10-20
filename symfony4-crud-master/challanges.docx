@@ -1,0 +1,9 @@
+﻿php -S 127.0.0.1:8000 -t public
+
+While migrating the symfony i was unable to migrated i had created controller MovieController 
+
+then i ran 
+php bin/console doctrine:migrations:migrate
+
+ php bin/console doctrine:migrations:version --add --all
+ 

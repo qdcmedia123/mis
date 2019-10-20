@@ -1,0 +1,10 @@
+
+ssh -i noosmall.pem ubuntu@3.130.88.202
+
+http://www.noosmall.com/.well-known/acme-challenge/fP7_MH7DuU7fEJ4ByGGjVb2Qqd0A2YmoZb9WpxkZacU
+
+ServerName www.noosmall.com
+ServerAlias noosmall.com
+
+
+installing nodejs 10.16.0 lts on ubuntu 16.0
