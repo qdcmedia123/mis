@@ -1,0 +1,5 @@
+docker run -it -p 80:80 --rm sample:dev
+
+docker run -it -p 80:80 --rm sample:dev
+
+docker run sample:server

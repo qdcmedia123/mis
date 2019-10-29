@@ -1,0 +1,8 @@
+1. Install prettier globally 
+2. then run from cli
+
+prettier "test.js" --write
+
+https://www.codereadability.com/automated-code-formatting-with-prettier/
+
+prettier "*.js" --write

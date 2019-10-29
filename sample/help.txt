@@ -1,0 +1,15 @@
+get docker running ip by container name 
+docker inspect --format '{{ .NetworkSettings.IPAddress }}' fervent_curie
+
+
+docker run -it -p 80:80 --rm sample:dev
+docker build -f Dockerfile -t sample:dev .
+
+#login to container
+docker exec -ti ecstatic_goldberg sh
+
+docker exec -it ecstatic_goldberg #!/bin/sh
+
+docker exec -ti gallant_stallman sh
+
+docker build your_build_name
