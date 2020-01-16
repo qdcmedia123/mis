@@ -1,0 +1,1 @@
+arn:aws:cloudformation:us-east-2:500374226272:stack/dashbird-delegation/7a0a8bb0-10e8-11ea-b059-060a435a9e52
