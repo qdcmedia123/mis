@@ -2,7 +2,7 @@ get docker running ip by container name
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' fervent_curie
 
 
-docker run -it -p 80:80 --rm sample:dev
+docker run -it -p 5000:5000 --rm sample:dev
 docker build -f Dockerfile -t sample:dev .
 
 #login to container
@@ -11,3 +11,8 @@ docker exec -ti ecstatic_goldberg sh
 docker exec -it ecstatic_goldberg #!/bin/sh
 
 docker exec -ti gallant_stallman sh
+
+
+// Get docker ip address 
+// 
+sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' 2f099445dc6d
